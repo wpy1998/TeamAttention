@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wpy.teamattention">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="TeamAttention"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="注册"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".WorkActivity"
+            android:label="任务"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AddWork"
+            android:label="添加任务"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".EditWork"
+            android:label="编辑任务"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".BuilderActivity"
+            android:label="群主"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MemberActivity"
+            android:label="成员"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ManagerActivity"
+            android:label="管理员"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AddGroup"
+            android:label="添加项目"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AddMember"
+            android:label="添加成员"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".GroupActivity"
+            android:label="项目"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PeopleActivity"
+            android:label="人员"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".WordActivity"
+            android:label="评论"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AddMessage"
+            android:label="添加帖子"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AddResponse"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AddFile"
+            android:label="添加文件"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainActivity"
+            android:label="主页"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserActivity"
+            android:label="用户"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".FileActivity"
+            android:label="添加文件"
+            android:launchMode="singleTask" />
+    </application>
+
+</manifest>
